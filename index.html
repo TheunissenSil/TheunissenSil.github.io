@@ -4,33 +4,451 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Sil Theunissen</title>
   </head>
   <body>
     <header>
-      <section>
-      <a href="#homeSection" id="logo" target="_blank"><h1>Sil Theunissen</h1></a>
-      
-      <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
-      <input type="checkbox" id="toggle-1">
-      
-      <nav>
-        <ul>
-          <li><a href="#homeSection">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <section class="navagationbar">
+        <a href="#start" id="logo" target="_blank"><h2>Sil Theunissen</h2></a>
+
+        <label for="toggle-1" class="toggle-menu"
+          ><ul>
+            <li></li>
+            <li></li>
+            <li></li></ul
+        ></label>
+        <input type="checkbox" id="toggle-1" />
+
+        <nav>
+          <ul>
+            <li><a href="#start">Home</a></li>
+            <li><a href="#pageAbout">About</a></li>
+            <li><a href="#pageSkills">Skills</a></li>
+            <li><a href="#pageRecensies">Recensies</a></li>
+            <li><a href="#pageProject">Projecten</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
     </header>
+    <section id="start" class="landingPage">
+      <div class="landingPageInfo">
+        <div class="pasFoto">
+          <img class="pasFotoImg" src="images/Pasfoto.jpg" alt="PasFoto" />
+        </div>
+        <div class="landingPageText">
+          <h1>Sil Theunissen</h1>
+          <p>1e jaars Software Developer</p>
+          <div class="socialMediaLinks">
+            <a href="https://www.instagram.com/siltheu/" target="_blank"
+              ><img src="images/instagram_icon.png" alt="Instagram"
+            /></a>
+            <a href="https://github.com/TheunissenSil" target="_blank"
+              ><img src="images/github_icon.png" alt="Github"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/sil-theunissen-2b6b561b5/"
+              target="_blank"
+              ><img src="images/linkedin_icon.png" alt="Linkedin"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
     <main>
-      <div class="aboutMe" id="homeSection">
-        <img class="aboutMePic" src="/images/unnamed.jpg" alt="Foto van Sil Theunissen">
-        <p>je dikke bolle vader </p>
+      <div class="about">
+        <div id="pageAbout"></div>
+        <h2 class="titel">About</h2>
+        <p class="subInfo subInfoAbout">
+          Hoi mijn naam is Sil Theunissen en ik ben 16 jaar oud. Ik woon in
+          Nijmegen en volg de opleiding Software Development op het Roc
+          Nijmegen. Daarnaast werk ik bij de Jumbo en in me vrije tijd ben ik
+          veel bezig met programeren of gamen. Verder woon ik momenteel thuis
+          met mijn ouders en me broertje en 2 honden. Ik ga af en toe naar de
+          sportschool om gezond te blijven en verder valt er niet heel veel ter
+          vertellen over mij.
+        </p>
+        <h2 class="subTitel">Simpele info:</h2>
+        <div class="infoRow">
+          <div class="infoColumn">
+            <ul>
+              <li><i>></i><strong>Verjaardag:</strong><span>31 Juli</span></li>
+              <li>
+                <i>></i><strong>Geboorteplaats:</strong><span>Nijmegen</span>
+              </li>
+              <li><i>></i><strong>WoonPlaats:</strong><span>Lent</span></li>
+            </ul>
+          </div>
+          <div class="infoColumn">
+            <ul>
+              <li><i>></i><strong>Leeftijd:</strong><span>16</span></li>
+              <li><i>></i><strong>Werk:</strong><span>Supermarkt :(</span></li>
+              <li>
+                <i>></i><strong>Website:</strong
+                ><span>siltheunissen.com<span>(Fake)</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="infoColumn">
+            <ul>
+              <li>
+                <i>></i><strong>Email:</strong
+                ><span>theunissensil@gmail.com</span>
+              </li>
+              <li><i>></i><strong>Tel:</strong><span>06-15301553</span></li>
+              <li>
+                <i>></i><strong>Adres:</strong><span>Alicantestraat 48</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="pageSkills"></div>
+        <h2 class="titel subTitelSkills">Skills</h2>
+        <p class="subInfo">
+          Dit zijn mijn huidige skills in code. Ik ben nog bezig met dit
+          ontwikkelen
+        </p>
+        <div class="skillRow">
+          <div class="skillColumn">
+            <div class="skill">
+              <div class="skillText">
+                <p>HTML</p>
+                <p>55%</p>
+              </div>
+              <div class="skillBar"><div class="skillHtml"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skillText">
+                <p>CSS</p>
+                <p>35%</p>
+              </div>
+              <div class="skillBar"><div class="skillCss"></div></div>
+            </div>
+          </div>
+          <div class="skillColumn">
+            <div class="skill">
+              <div class="skillText">
+                <p>Java</p>
+                <p>18%</p>
+              </div>
+              <div class="skillBar"><div class="skillJava"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skillText">
+                <p>Python</p>
+                <p>25%</p>
+              </div>
+              <div class="skillBar"><div class="skillPython"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recensies">
+        <div id="pageRecensies"></div>
+        <h2 class="titel">Recensies</h2>
+        <p class="subInfo subInfoRecensie">
+          Hier kunt u recenties vinden die bedrijven waar ik opdrachten voor
+          gemaakt heb gegeven heb.
+        </p>
+        <div class="recensies-container">
+          <div class="recensiesSlide fade">
+            <div class="recensiesTitelBar">
+              <img src="images/bedrijf1.jpg" alt="" />
+              <div class="recensiesSubInfo">
+                <h3>Bedrijf nummer 1 naam</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+            <div class="recensiesAlgemeen">
+              <div class="recensieTekst">
+                <p><span>Geschreven door:</span> Niek van Duren</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Pretium aenean pharetra magna ac placerat vestibulum lectus
+                  mauris ultrices. Congue mauris rhoncus aenean vel elit
+                  scelerisque. Est velit egestas dui id ornare arcu odio ut. Sed
+                  risus pretium quam vulputate dignissim suspendisse in. Purus
+                  non enim praesent elementum facilisis leo vel fringilla est.
+                  Arcu non sodales neque sodales ut etiam. Urna nec tincidunt
+                  praesent semper. Dolor magna eget est lorem. Tincidunt nunc
+                  pulvinar sapien et ligula. Blandit libero volutpat sed cras
+                  ornare arcu dui vivamus arcu. Convallis tellus id interdum
+                  velit laoreet id donec ultrices. Proin fermentum leo vel orci
+                  porta non pulvinar. Justo nec ultrices dui sapien eget mi
+                  proin. Et leo duis ut diam quam nulla porttitor massa.
+                  Ullamcorper dignissim cras tincidunt lobortis feugiat.
+                  Consectetur adipiscing elit ut aliquam purus sit. Turpis nunc
+                  eget lorem dolor sed viverra ipsum. Enim neque volutpat ac
+                  tincidunt vitae semper quis lectus nulla. Risus in hendrerit
+                  gravida rutrum quisque non tellus orci ac. Est ullamcorper
+                  eget nulla facilisi etiam dignissim diam. Vitae proin sagittis
+                  nisl rhoncus. Eu ultrices vitae auctor eu. Tristique et
+                  egestas quis ipsum suspendisse ultrices. Mi in nulla posuere
+                  sollicitudin aliquam ultrices sagittis. Arcu non sodales neque
+                  sodales ut etiam sit. Risus pretium quam vulputate dignissim
+                  suspendisse in est. Eu tincidunt tortor aliquam nulla facilisi
+                  cras fermentum. Enim neque volutpat ac tincidunt vitae semper
+                  quis lectus nulla. Tellus pellentesque eu tincidunt tortor
+                  aliquam. A diam sollicitudin tempor id. Nisi porta lorem
+                  mollis aliquam ut porttitor leo. Vitae elementum curabitur
+                  vitae nunc sed velit. Mattis pellentesque id nibh tortor id
+                  aliquet lectus proin. Orci dapibus ultrices in iaculis nunc
+                  sed. Massa id neque aliquam vestibulum. Massa tincidunt nunc
+                  pulvinar sapien et ligula. Eu tincidunt tortor aliquam nulla
+                  facilisi cras. Mauris pellentesque pulvinar pellentesque
+                  habitant morbi tristique senectus et. Sem fringilla ut morbi
+                  tincidunt augue interdum velit. Sed euismod nisi porta lorem
+                  mollis aliquam. Lacinia at quis risus sed. Donec ac odio
+                  tempor orci dapibus
+                </p>
+              </div>
+              <div class="recensieCijfer">
+                <p><span>Algeheel cijfer 1/10:</span> 7.8</p>
+              </div>
+            </div>
+          </div>
+          <div class="recensiesSlide fade">
+            <div class="recensiesTitelBar">
+              <img src="images/bedrijf2.jpg" alt="" />
+              <div class="recensiesSubInfo">
+                <h3>Bedrijf nummer 2 naam</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum. Consectetur adipiscing elit ut
+                  aliquam purus sit. Turpis nunc eget lorem dolor sed viverra
+                  ipsum. Enim neque volutpat ac tincidunt vitae semper quis
+                  lectus nulla. Risus in hendrerit gravida rutrum quisque non
+                  tellus orci ac. Est ullamcorper eget nulla facilisi etiam
+                  dignissim diam. Vitae proin sagittis nisl rhoncus. Eu ultrices
+                  vitae auctor eu. Tristique et egestas quis ipsum suspendisse
+                  ultrices. Mi in nulla posuere sollicitudin aliquam ultrices
+                  sagittis. Arcu non sodales neque sodales ut etiam sit. Risus
+                  pretium quam vulputate dignissim suspendisse in est. Eu
+                  tincidunt tortor aliquam nulla facilisi cras fermentum. Enim
+                  neque volutpat ac tincidunt vitae semper quis lectus nulla.
+                  Tellus pellentesque eu tincidunt tortor aliquam. A diam
+                  sollicitudin tempor id.
+                </p>
+              </div>
+            </div>
+            <div class="recensiesAlgemeen">
+              <div class="recensieTekst">
+                <p><span>Geschreven door:</span> Steven Fuchs</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Pretium aenean pharetra magna ac placerat vestibulum lectus
+                  mauris ultrices. Congue mauris rhoncus aenean vel elit
+                  scelerisque. Est velit egestas dui id ornare arcu odio ut. Sed
+                  risus pretium quam vulputate dignissim suspendisse in. Purus
+                  non enim praesent elementum facilisis leo vel fringilla est.
+                  Arcu non sodales neque sodales ut etiam. Urna nec tincidunt
+                  praesent semper. Dolor magna eget est lorem. Tincidunt nunc
+                  pulvinar sapien et ligula. Blandit libero volutpat sed cras
+                  ornare arcu dui vivamus arcu. Convallis tellus id interdum
+                  velit laoreet id donec ultrices. Proin fermentum leo vel orci
+                  porta non pulvinar. Justo nec ultrices dui sapien eget mi
+                  proin. Et leo duis ut diam quam nulla porttitor massa.
+                  Ullamcorper dignissim cras tincidunt lobortis feugiat.
+                  Consectetur adipiscing elit ut aliquam purus sit.
+                </p>
+                <br />
+                <p>
+                  Turpis nunc eget lorem dolor sed viverra ipsum. Enim neque
+                  volutpat ac tincidunt vitae semper quis lectus nulla. Risus in
+                  hendrerit gravida rutrum quisque non tellus orci ac. Est
+                  ullamcorper eget nulla facilisi etiam dignissim diam. Vitae
+                  proin sagittis nisl rhoncus. Eu ultrices vitae auctor eu.
+                  Tristique et egestas quis ipsum suspendisse ultrices. Mi in
+                  nulla posuere sollicitudin aliquam ultrices sagittis. Arcu non
+                  sodales neque sodales ut etiam sit. Risus pretium quam
+                  vulputate dignissim suspendisse in est. Eu tincidunt tortor
+                  aliquam nulla facilisi cras fermentum. Enim neque volutpat ac
+                  tincidunt vitae semper quis lectus nulla. Tellus pellentesque
+                  eu tincidunt tortor aliquam. A diam sollicitudin tempor id.
+                  Nisi porta lorem mollis aliquam ut porttitor leo. Vitae
+                  elementum curabitur vitae nunc sed velit. Mattis pellentesque
+                  id nibh tortor id aliquet lectus proin. Orci dapibus ultrices
+                  in iaculis nunc sed. Massa id neque aliquam vestibulum. Massa
+                  tincidunt nunc pulvinar sapien et ligula. Eu tincidunt tortor
+                  aliquam nulla facilisi cras. Mauris pellentesque pulvinar
+                  pellentesque habitant morbi tristique senectus et. Sem
+                  fringilla ut morbi tincidunt augue interdum velit. Sed euismod
+                  nisi porta lorem mollis aliquam. Lacinia at quis risus sed.
+                  Donec ac odio tempor orci dapibus
+                </p>
+              </div>
+              <div class="recensieCijfer">
+                <p><span>Algeheel cijfer 1/10:</span> 8</p>
+              </div>
+            </div>
+          </div>
+          <div class="recensiesSlide fade">
+            <div class="recensiesTitelBar">
+              <img src="images/bedrijf3.jpg" alt="" />
+              <div class="recensiesSubInfo">
+                <h3>Bedrijf nummer 3 naam</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="recensiesAlgemeen">
+              <div class="recensieTekst">
+                <p><span>Geschreven door:</span> Joris Husken</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Pretium aenean pharetra magna ac placerat vestibulum lectus
+                  mauris ultrices. Congue mauris rhoncus aenean vel elit
+                  scelerisque. Est velit egestas dui id ornare arcu odio ut. Sed
+                  risus pretium quam vulputate dignissim suspendisse in. Purus
+                  non enim praesent elementum facilisis leo vel fringilla est.
+                </p>
+                <br />
+                <p>
+                  Turpis nunc eget lorem dolor sed viverra ipsum. Enim neque
+                  volutpat ac tincidunt vitae semper quis lectus nulla. Risus in
+                  hendrerit gravida rutrum quisque non tellus orci ac. Est
+                  ullamcorper eget nulla facilisi etiam dignissim diam. Vitae
+                  proin sagittis nisl rhoncus. Eu ultrices vitae auctor eu.
+                  Tristique et egestas quis ipsum suspendisse ultrices. Mi in
+                  nulla posuere sollicitudin aliquam ultrices sagittis. Arcu non
+                  sodales neque sodales ut etiam sit. Risus pretium quam
+                  vulputate dignissim suspendisse in est. Eu tincidunt tortor
+                  aliquam nulla facilisi cras fermentum. Enim neque volutpat ac
+                  tincidunt vitae semper quis lectus nulla. Tellus pellentesque
+                </p>
+                <br />
+                <p>
+                  Arcu non sodales neque sodales ut etiam. Urna nec tincidunt
+                  praesent semper. Dolor magna eget est lorem. Tincidunt nunc
+                  pulvinar sapien et ligula. Blandit libero volutpat sed cras
+                  ornare arcu dui vivamus arcu. Convallis tellus id interdum
+                  velit laoreet id donec ultrices. Proin fermentum leo vel orci
+                  porta non pulvinar. Justo nec ultrices dui sapien eget mi
+                  proin. Et leo duis ut diam quam nulla porttitor massa.
+                  Ullamcorper dignissim cras tincidunt lobortis feugiat.
+                  Consectetur adipiscing elit ut aliquam purus sit.
+                </p>
+              </div>
+              <div class="recensieCijfer">
+                <p><span>Algeheel cijfer 1/10:</span> 6.7</p>
+              </div>
+            </div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+      <div class="projecten">
+        <div id="pageProject"></div>
+        <div class="projectTitel">
+          <h2 class="titel">Projecten</h2>
+          <p class="subInfo subInfoProject">
+            Hier kut u alle projecten vinden die ik tot nu toe gemaakt heb.
+          </p>
+        </div>
+        <div class="projectRow">
+          <div class="videoProject">
+            <h2>Project 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              sit amet commodo lectus. Aenean sit amet eros in odio porttitor
+              fermentum in suscipit tellus.
+            </p>
+            <iframe
+              width="460"
+              height="215"
+              src="https://www.youtube.com/embed/1RcVIuZ8Wdk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="videoProject">
+            <h2>Project 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              sit amet commodo lectus. Aenean sit amet eros in odio porttitor
+              fermentum in suscipit tellus. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Quisque sit amet commodo lectus.
+            </p>
+            <iframe
+              width="460"
+              height="215"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="projectRow">
+          <div class="videoProject">
+            <h2>Project 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              sit amet commodo lectus.
+            </p>
+            <iframe
+              width="460"
+              height="215"
+              src="https://www.youtube.com/embed/e12z1NeJvCQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="videoProject">
+            <h2>Project 4</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              sit amet commodo lectus. Aenean sit amet eros in odio porttitor
+              fermentum in suscipit tellus. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Quisque sit amet commodo lectus.
+              Aenean sit amet eros in odio porttitor fermentum in suscipit
+              tellus.
+            </p>
+            <iframe
+              width="460"
+              height="215"
+              src="https://www.youtube.com/embed/03YrxzWMY5c"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </main>
+    <script src="JavaScript/main.js"></script>
   </body>
 </html>

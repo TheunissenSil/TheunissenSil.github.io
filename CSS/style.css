@@ -1,0 +1,589 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-style: Classic, Slab + Serif;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+/* ------------- */
+/* Header */
+.navagationbar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  background-color: #45505b;
+  position: fixed;
+  z-index: 1000;
+  padding: 0;
+}
+
+#logo h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: RGB(249, 249, 249);
+  font-weight: 600;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ec4444;
+  }
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  color: RGB(249, 249, 249);
+  font-size: 18px;
+  padding: 25px 20px;
+  display: inline-block;
+  transition: all 0.5s ease 0s;
+  margin: 0;
+}
+
+nav ul li a:hover {
+  background-color: RGB(249, 249, 249);
+  color: #ec4444;
+  transition: all 0.5s ease 0s;
+}
+
+/* Dropdown Menu */
+.toggle-menu ul {
+  display: table;
+  width: 25px;
+}
+
+.toggle-menu ul li {
+  width: 100%;
+  height: 3px;
+  background-color: RGB(249, 249, 249);
+  margin-bottom: 4px;
+}
+
+input[type="checkbox"],
+label {
+  display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+  .navagationbar {
+    max-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  header {
+    padding: 20px 0px;
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    background: none;
+  }
+
+  label {
+    padding: 8px 0px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked ~ nav {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 77px;
+    background-color: #45505b;
+    z-index: 99;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+    display: block;
+  }
+
+  nav ul li a i {
+    color: #ec4444;
+    padding-right: 13px;
+  }
+}
+/* ------------- */
+/* landingPage */
+#start {
+  width: 100%;
+  height: 100vh;
+  background: url("/images/background.png") no-repeat !important;
+  background-size: contain;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 160px;
+}
+
+#start:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.landingPageInfo {
+  width: 50%;
+  height: 200px;
+  position: absolute;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.landingPageText {
+  height: 100%;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.pasFoto img {
+  width: 150px;
+  animation: morph 8s ease-in-out infinite 1s;
+  margin-left: 25px;
+  border: 5px solid RGB(179, 180, 184);
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.landingPageInfo .landingPageText h1 {
+  font-size: 64px;
+  color: #45505b;
+}
+
+.landingPageInfo .landingPageText p {
+  font-size: 20px;
+}
+
+.landingPageInfo .landingPageText .socialMediaLinks {
+  position: absolute;
+  margin-top: 10px;
+}
+
+.landingPageInfo .landingPageText .socialMediaLinks a {
+  margin-right: 5px;
+}
+
+.landingPageInfo .landingPageText .socialMediaLinks a img {
+  width: 22px;
+}
+/* ------------- */
+/* Algemene shit */
+main {
+  height: auto;
+}
+
+.titel {
+  font-size: 50px;
+  color: #45505b;
+  height: 75px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.titel::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.titel::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #ec4444;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.subInfo {
+  margin-top: 40px;
+  width: 50%;
+  text-align: center;
+}
+
+.subTitel {
+  font-size: 30px;
+  color: #45505b;
+  margin-top: 20px;
+}
+/* ------------- */
+/* About */
+.about {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about #pageAbout {
+  margin-bottom: 120px;
+}
+
+.about .subInfoAbout {
+  margin-bottom: 50px;
+}
+
+.about .infoRow {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about .infoRow .infoColumn {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .infoRow .infoColumn ul li {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.about .infoRow .infoColumn ul li strong,
+.about .infoRow .infoColumn ul li span {
+  margin-left: 6px;
+}
+
+.about .infoRow .infoColumn ul li span span {
+  color: #ec4444;
+}
+
+.about #pageSkills {
+  margin-bottom: 175px;
+}
+
+.about .skillRow {
+  margin-top: 70px;
+  height: 250px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about .skillRow .skillColumn {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about .skillRow .skillColumn .skill {
+  width: 80%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .skillRow .skillColumn .skill .skillText {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about .skillRow .skillColumn .skill .skillBar {
+  width: 100%;
+  height: 55%;
+  border: 2px solid black;
+}
+
+.about .skillRow .skillColumn .skill .skillBar .skillHtml {
+  height: 100%;
+  width: 55%;
+  background-color: #ec4444;
+}
+
+.about .skillRow .skillColumn .skill .skillBar .skillCss {
+  height: 100%;
+  width: 35%;
+  background-color: #ec4444;
+}
+
+.about .skillRow .skillColumn .skill .skillBar .skillJava {
+  height: 100%;
+  width: 18%;
+  background-color: #ec4444;
+}
+
+.about .skillRow .skillColumn .skill .skillBar .skillPython {
+  height: 100%;
+  width: 25%;
+  background-color: #ec4444;
+}
+/* ------------- */
+/* Recensies */
+.recensies {
+  width: 100%;
+  height: auto;
+  margin-top: 0x;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.recensies #pageRecensies {
+  margin-bottom: 65px;
+}
+
+.recensies .subInfoRecensie {
+  margin: 0;
+}
+
+.recensies .recensies-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.recensies .recensies-container .recensiesSlide {
+  display: none;
+  height: auto;
+}
+
+.recensies .recensies-container .prev,
+.recensies .recensies-container .next {
+  cursor: pointer;
+  position: absolute;
+  padding: 16px;
+  color: #ec4444;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+.recensies .recensies-container .prev {
+  border-radius: 0 3px 3px 0;
+  left: 5%;
+}
+
+.recensies .recensies-container .next {
+  border-radius: 3px 0 0 3px;
+  right: 5%;
+}
+
+.recensies .recensies-container .prev:hover,
+.recensies .recensies-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ec4444;
+}
+
+.recensies .recensies-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.recensies .recensies-container .recensiesSlide {
+  position: relative;
+  height: auto;
+  width: 80%;
+  background-color: #45505b;
+  border: #ec4444 3px solid;
+  border-radius: 25px;
+}
+
+.recensies .recensies-container .recensiesSlide .recensiesTitelBar {
+  height: 40%;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+}
+
+.recensies .recensies-container .recensiesSlide .recensiesTitelBar img {
+  width: 300px;
+}
+
+.recensies .recensies-container .recensiesSlide .recensiesTitelBar h3 {
+  margin-left: 15px;
+  font-weight: bolder;
+}
+
+.recensies .recensies-container .recensiesSlide .recensiesTitelBar p {
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.recensies .recensies-container .recensiesSlide .recensiesAlgemeen {
+  padding: 15px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recensies .recensies-container .recensiesSlide .recensiesAlgemeen p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.recensies .recensies-container .recensiesSlide .recensiesAlgemeen span {
+  font-weight: bold;
+}
+
+.recensies
+  .recensies-container
+  .recensiesSlide
+  .recensiesAlgemeen
+  .recensieTekst {
+  width: 100%;
+  height: auto;
+}
+
+.recensies
+  .recensies-container
+  .recensiesSlide
+  .recensiesAlgemeen
+  .recensieCijfer {
+  width: 100%;
+  height: max-content;
+}
+/* ------------- */
+/* Projecten */
+.projecten {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.projecten #pageProject {
+  margin-bottom: 130px;
+}
+
+.projecten .projectTitel {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projecten .projectTitel .subInfoProject {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.projecten .projectRow {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.projecten .projectRow .videoProject {
+  width: 30%;
+  height: 90%;
+  padding: 10px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #45505b;
+  border: #ec4444 3px solid;
+}

@@ -577,7 +577,7 @@ main {
 
 .projecten .projectRow .videoProject {
   width: 30%;
-  height: 90%;
+  height: auto;
   padding: 10px;
   border-radius: 25px;
   display: flex;
@@ -586,4 +586,23 @@ main {
   justify-content: space-evenly;
   background-color: #45505b;
   border: #ec4444 3px solid;
+}
+
+.projecten .projectRow .videoProject .videoContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-top: 10px;
+}
+
+.projecten .projectRow .videoProject .videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
 }

@@ -543,7 +543,7 @@ main {
 /* Projecten */
 .projecten {
   width: 100%;
-  height: 1000px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -569,6 +569,7 @@ main {
 }
 
 .projecten .projectRow {
+  margin: 25px 0 25px 0;
   width: 100%;
   height: 40%;
   display: flex;
@@ -600,9 +601,107 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   width: 100%;
   height: 100%;
   border-radius: 15px;
+}
+/* ------------- */
+/* Services  */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.tableComputer {
+  width: 80%;
+  height: 500px;
+  display: block;
+  margin-top: 50px;
+}
+
+.tableComputer table,
+th,
+td {
+  border: 2px solid white;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+.tableComputer table tr th,
+td {
+  background-color: #45505b;
+}
+
+.tableComputer table tr th {
+  width: 40%;
+  height: 50px;
+}
+
+.tableComputer table tr td {
+  text-align: center;
+}
+
+.tableComputer table tr td div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tableComputer table tr td div .redBall {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #ec4444;
+}
+
+.tableComputer table tr .igonoreTh {
+  width: 20%;
+}
+
+.tableMobile {
+  width: 80%;
+  height: 500px;
+  display: none;
+}
+
+.tableMobile table {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: #45505b;
+  border-radius: 15px;
+  border: #ec4444 3px solid;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.tableMobile table .marginTable {
+  height: 5px;
+}
+
+.tableMobile table tr th {
+  font-size: larger;
+  border: none;
+}
+
+.tableMobile table tr td {
+  border: none;
+  text-align: center;
+  border-radius: 0px;
+}
+
+@media only screen and (max-width: 480px) {
+  .tableComputer {
+    display: none;
+  }
+
+  .tableMobile {
+    display: block;
+  }
 }

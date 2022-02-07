@@ -1,6 +1,0 @@
-Font pairing style: Classic, Slab + Serif
-Title font: Oswald
-Paragraph font: EB Garamond
-Text color: RGB(249, 249, 249)
-Background color: RGB(51, 47, 48)
-Additional color(s): RGB(128, 132, 141), RGB(179, 180, 184)

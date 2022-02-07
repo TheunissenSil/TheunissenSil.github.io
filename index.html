@@ -5,10 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Sil Theunissen</title>
   </head>
+
   <body>
+    <!-- Back to top button -->
+    <div onclick="backToTopFunction()" id="backToTop">
+      <img src="/images/back-to-top-icon-png.jpg" alt="back-to-top-icon-png" />
+    </div>
+    <script>
+      // Back to top button script
+      backToTop = document.getElementById("backToTop");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          backToTop.style.display = "block";
+        } else {
+          backToTop.style.display = "none";
+        }
+      }
+
+      function backToTopFunction() {
+        document.body.scrollTop = 0; // Safari
+        document.documentElement.scrollTop = 0; // Chrome, firefox, Internet Explorer, Opera
+      }
+
+      /* 
+      Het wou niet werken in het main.js bestand dus heb ik besloten om het op deze manier
+      op te lossen en het in het HTML bestand te plaatsen :/ 
+      */
+    </script>
+
     <header>
       <section class="navagationbar">
         <a href="#start" id="logo" target="_blank"><h2>Sil Theunissen</h2></a>
@@ -34,21 +68,26 @@
         </nav>
       </section>
     </header>
+
     <section id="start">
       <div class="landingPageInfo">
         <div class="pasFoto">
           <img class="pasFotoImg" src="images/Pasfoto.jpg" alt="PasFoto" />
         </div>
+
         <div class="landingPageText">
           <h1>Sil Theunissen</h1>
           <p>1e jaars Software Developer</p>
+
           <div class="socialMediaLinks">
             <a href="https://www.instagram.com/siltheu/" target="_blank"
               ><img src="images/instagram_icon.png" alt="Instagram"
             /></a>
+
             <a href="https://github.com/TheunissenSil" target="_blank"
               ><img src="images/github_icon.png" alt="Github"
             /></a>
+
             <a
               href="https://www.linkedin.com/in/sil-theunissen-2b6b561b5/"
               target="_blank"
@@ -58,6 +97,7 @@
         </div>
       </div>
     </section>
+
     <main>
       <div class="about">
         <div id="pageAbout"></div>
@@ -71,46 +111,61 @@
           sportschool om gezond te blijven en verder valt er niet heel veel ter
           vertellen over mij.
         </p>
+
         <h2 class="subTitel">Simpele info:</h2>
         <div class="infoRow">
           <div class="infoColumn">
             <ul>
               <li><i>></i><strong>Verjaardag:</strong><span>31 Juli</span></li>
+
               <li>
                 <i>></i><strong>Geboorteplaats:</strong><span>Nijmegen</span>
               </li>
+
               <li><i>></i><strong>WoonPlaats:</strong><span>Lent</span></li>
             </ul>
           </div>
+
           <div class="infoColumn">
             <ul>
               <li><i>></i><strong>Leeftijd:</strong><span>16</span></li>
+
               <li><i>></i><strong>Werk:</strong><span>Supermarkt :(</span></li>
+
               <li>
                 <i>></i><strong>Website:</strong
-                ><span>siltheunissen.com<span>(Fake)</span></span>
+                ><span
+                  ><a href="https://theunissensil.github.io/"
+                    >theunissensil.github.io</a
+                  >
+                </span>
               </li>
             </ul>
           </div>
+
           <div class="infoColumn">
             <ul>
               <li>
                 <i>></i><strong>Email:</strong
                 ><span>theunissensil@gmail.com</span>
               </li>
+
               <li><i>></i><strong>Tel:</strong><span>06-15301553</span></li>
+
               <li>
-                <i>></i><strong>Adres:</strong><span>Alicantestraat 48</span>
+                <i>></i><strong>Adres:</strong><span>Ubbergseveldweg 70A3</span>
               </li>
             </ul>
           </div>
         </div>
+
         <div id="pageSkills"></div>
         <h2 class="titel subTitelSkills">Skills</h2>
         <p class="subInfo">
           Dit zijn mijn huidige skills in code. Ik ben nog bezig met dit
           ontwikkelen
         </p>
+
         <div class="skillRow">
           <div class="skillColumn">
             <div class="skill">
@@ -120,6 +175,7 @@
               </div>
               <div class="skillBar"><div class="skillHtml"></div></div>
             </div>
+
             <div class="skill">
               <div class="skillText">
                 <p>CSS</p>
@@ -128,6 +184,7 @@
               <div class="skillBar"><div class="skillCss"></div></div>
             </div>
           </div>
+
           <div class="skillColumn">
             <div class="skill">
               <div class="skillText">
@@ -136,6 +193,7 @@
               </div>
               <div class="skillBar"><div class="skillJava"></div></div>
             </div>
+
             <div class="skill">
               <div class="skillText">
                 <p>Python</p>
@@ -146,6 +204,7 @@
           </div>
         </div>
       </div>
+
       <div class="recensies">
         <div id="pageRecensies"></div>
         <h2 class="titel">Recensies</h2>
@@ -153,6 +212,7 @@
           Hier kunt u recenties vinden die bedrijven waar ik opdrachten voor
           gemaakt heb gegeven heb.
         </p>
+
         <div class="recensies-container">
           <div class="recensiesSlide fade">
             <div class="recensiesTitelBar">
@@ -171,6 +231,7 @@
                 </p>
               </div>
             </div>
+
             <div class="recensiesAlgemeen">
               <div class="recensieTekst">
                 <p><span>Geschreven door:</span> Niek van Duren</p>
@@ -215,11 +276,13 @@
                   tempor orci dapibus
                 </p>
               </div>
+
               <div class="recensieCijfer">
                 <p><span>Algeheel cijfer 1/10:</span> 7.8</p>
               </div>
             </div>
           </div>
+
           <div class="recensiesSlide fade">
             <div class="recensiesTitelBar">
               <img src="images/bedrijf2.jpg" alt="" />
@@ -250,6 +313,7 @@
                 </p>
               </div>
             </div>
+
             <div class="recensiesAlgemeen">
               <div class="recensieTekst">
                 <p><span>Geschreven door:</span> Steven Fuchs</p>
@@ -297,11 +361,13 @@
                   Donec ac odio tempor orci dapibus
                 </p>
               </div>
+
               <div class="recensieCijfer">
                 <p><span>Algeheel cijfer 1/10:</span> 8</p>
               </div>
             </div>
           </div>
+
           <div class="recensiesSlide fade">
             <div class="recensiesTitelBar">
               <img src="images/bedrijf3.jpg" alt="" />
@@ -317,6 +383,7 @@
                 </p>
               </div>
             </div>
+
             <div class="recensiesAlgemeen">
               <div class="recensieTekst">
                 <p><span>Geschreven door:</span> Joris Husken</p>
@@ -356,6 +423,7 @@
                   Consectetur adipiscing elit ut aliquam purus sit.
                 </p>
               </div>
+
               <div class="recensieCijfer">
                 <p><span>Algeheel cijfer 1/10:</span> 6.7</p>
               </div>
@@ -365,6 +433,7 @@
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
+
       <div class="projecten">
         <div id="pageProject"></div>
         <div class="projectTitel">
@@ -373,6 +442,7 @@
             Hier kut u alle projecten vinden die ik tot nu toe gemaakt heb.
           </p>
         </div>
+
         <div class="projectRow">
           <div class="videoProject">
             <h2>Project 1</h2>
@@ -390,6 +460,7 @@
               ></iframe>
             </div>
           </div>
+
           <div class="videoProject">
             <h2>Project 2</h2>
             <p>
@@ -408,6 +479,7 @@
             </div>
           </div>
         </div>
+
         <div class="projectRow">
           <div class="videoProject">
             <h2>Project 3</h2>
@@ -424,6 +496,7 @@
               ></iframe>
             </div>
           </div>
+
           <div class="videoProject">
             <h2>Project 4</h2>
             <p>
@@ -445,6 +518,7 @@
           </div>
         </div>
       </div>
+
       <div class="services">
         <div id="pageService"></div>
         <h2 class="titel">Services</h2>
@@ -454,6 +528,7 @@
           optie kijk hier onder naar de prijzen en wat je daar precies voor
           terug krijgt.
         </p>
+
         <div class="tableComputer">
           <table>
             <tr>
@@ -462,6 +537,7 @@
               <th class="igonoreTh">Premium</th>
               <th class="igonoreTh">Elite</th>
             </tr>
+
             <tr>
               <th>Basis applicatie met standaard functies</th>
               <td>
@@ -474,6 +550,7 @@
                 <div><div class="redBall"></div></div>
               </td>
             </tr>
+
             <tr>
               <th>
                 Een applicatie die responsive is dus eventueel geschikt voor
@@ -487,6 +564,7 @@
                 <div><div class="redBall"></div></div>
               </td>
             </tr>
+
             <tr>
               <th>
                 Een geavanceerde applicatie die responsive is en waar eventueel
@@ -498,6 +576,7 @@
                 <div><div class="redBall"></div></div>
               </td>
             </tr>
+
             <tr>
               <th>
                 Een gecompliceerde applicatie hierbij moet je denken aan een
@@ -510,6 +589,7 @@
                 <div><div class="redBall"></div></div>
               </td>
             </tr>
+
             <tr>
               <th>Prijzen</th>
               <td>€5,00 per uur</td>
@@ -518,31 +598,38 @@
             </tr>
           </table>
         </div>
+
         <div class="tableMobile">
           <table>
             <tr>
               <th>Baispakket</th>
             </tr>
+
             <tr class="marginTable"></tr>
             <tr>
               <td>Basis applicatie met standaard functies</td>
             </tr>
+
             <tr class="marginTable"></tr>
             <tr>
               <th>Prijs:</th>
             </tr>
+
             <tr>
               <td>€5,00 per uur</td>
             </tr>
           </table>
+
           <table>
             <tr>
               <th>Premium pakket</th>
             </tr>
+
             <tr class="marginTable"></tr>
             <tr>
               <td>Basis applicatie met standaard functies</td>
             </tr>
+
             <tr class="marginTable"></tr>
             <tr>
               <td>
@@ -550,22 +637,27 @@
                 meerdere apparaten
               </td>
             </tr>
+
             <tr class="marginTable"></tr>
             <tr>
               <th>Prijs:</th>
             </tr>
+
             <tr>
               <td>€10,00 per uur</td>
             </tr>
           </table>
+
           <table>
             <tr>
               <th>Elite pakket</th>
             </tr>
+
             <tr class="marginTable"></tr>
             <tr>
               <td>Basis applicatie met standaard functies</td>
             </tr>
+
             <tr class="marginTable"></tr>
             <tr>
               <td>
@@ -573,6 +665,7 @@
                 meerdere apparaten
               </td>
             </tr>
+
             <tr class="marginTable"></tr>
             <tr>
               <td>
@@ -580,6 +673,7 @@
                 ook annimaties bij betrokken zijn
               </td>
             </tr>
+
             <tr class="marginTable"></tr>
             <tr>
               <td>
@@ -588,16 +682,19 @@
                 is en of andere geavanceerdere functies
               </td>
             </tr>
+
             <tr class="marginTable"></tr>
             <tr>
               <th>Prijs:</th>
             </tr>
+
             <tr>
               <td>€15,00 per uur</td>
             </tr>
           </table>
         </div>
       </div>
+
       <div class="contact">
         <div id="pageContact"></div>
         <h2 class="titel">Contact</h2>
@@ -607,18 +704,22 @@
           contact met mij op te nemen via het formulier hier onder. Heb je nou
           nog andere vragen of opmerkingen hoor ik het graag :).
         </p>
+
         <form class="contact-form">
           <div class="naam-email">
             <div class="form-element">
               <input type="text" class="form-input" placeholder="Jouw naam" />
             </div>
+
             <div class="form-element">
               <input type="email" class="form-input" placeholder="Jouw email" />
             </div>
           </div>
+
           <div class="form-element">
             <input type="text" class="form-input" placeholder="Onderwerp" />
           </div>
+
           <div class="form-element">
             <textarea
               style="height: 154px"
@@ -627,31 +728,37 @@
               placeholder="Bericht"
             ></textarea>
           </div>
+
           <div class="form-submit">
             <input type="submit" class="submit-button" />
           </div>
         </form>
       </div>
     </main>
+
     <footer>
       <div class="socialMediaLinks">
         <a href="https://www.instagram.com/siltheu/" target="_blank"
           ><img src="images/instagram_icon.png" alt="Instagram"
         /></a>
+
         <a href="https://github.com/TheunissenSil" target="_blank"
           ><img src="images/github_icon.png" alt="Github"
         /></a>
+
         <a
           href="https://www.linkedin.com/in/sil-theunissen-2b6b561b5/"
           target="_blank"
           ><img src="images/linkedin_icon.png" alt="Linkedin"
         /></a>
       </div>
+
       <div>
         © Copyright <strong><span>siltheu</span></strong
         >. All Rights Reserved
       </div>
     </footer>
+
     <script src="JavaScript/main.js"></script>
   </body>
 </html>

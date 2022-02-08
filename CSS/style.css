@@ -86,10 +86,11 @@ nav ul li a {
   margin: 0;
 }
 
-nav ul li a:hover {
-  background-color: RGB(249, 249, 249);
+nav ul li a:hover,
+nav ul li a:focus {
   color: #ec4444;
-  transition: all 0.5s ease 0s;
+  box-shadow: inset 0 0 0 2em white;
+  border-color: black;
 }
 
 /* Dropdown Menu */
@@ -193,10 +194,16 @@ label {
   position: absolute;
   display: flex;
   align-items: center;
+  animation: 2s ease-out 0s 1 fromLeft;
 }
 
-#start .landingPageInfo .pasFoto {
-  display: block;
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 #start .landingPageInfo .pasFoto img {
@@ -328,7 +335,7 @@ main {
 }
 
 .about #pageAbout {
-  margin-bottom: 120px;
+  margin-bottom: 125px;
 }
 
 .about .subInfoAbout {
@@ -367,7 +374,7 @@ main {
 }
 
 .about #pageSkills {
-  margin-bottom: 175px;
+  margin-bottom: 125px;
 }
 
 .about .skillRow {
@@ -443,7 +450,7 @@ main {
 }
 
 .recensies #pageRecensies {
-  margin-bottom: 65px;
+  margin-bottom: 125px;
 }
 
 .recensies .subInfoRecensie {
@@ -608,7 +615,7 @@ main {
 }
 
 .projecten #pageProject {
-  margin-bottom: 130px;
+  margin-bottom: 125px;
 }
 
 .projecten .projectTitel {
@@ -644,6 +651,13 @@ main {
   justify-content: space-evenly;
   background-color: #45505b;
   border: #ec4444 3px solid;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.projecten .projectRow .videoProject:hover {
+  top: -25px;
 }
 
 .projecten .projectRow .videoProject .videoContainer {
@@ -673,7 +687,7 @@ main {
 }
 
 .services #pageService {
-  margin-bottom: 150px;
+  margin-bottom: 125px;
 }
 
 .tableComputer {
@@ -810,7 +824,7 @@ td {
   font-size: 14px;
   width: 100%;
   padding: 5px 5px;
-  border: 1px solid #45505b;
+  border: 1px solid;
 }
 
 .contact .contact-form .naam-email .form-element {

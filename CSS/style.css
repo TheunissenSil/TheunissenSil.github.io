@@ -9,6 +9,20 @@
   outline: none;
 }
 /* ------------- */
+/* Bak to Top */
+#backToTop {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+#backToTop img {
+  width: 35px;
+}
+/* ------------- */
 /* Header */
 .navagationbar {
   width: 100%;
@@ -346,8 +360,10 @@ main {
   margin-left: 6px;
 }
 
-.about .infoRow .infoColumn ul li span span {
-  color: #ec4444;
+.about .infoRow .infoColumn ul li span a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
 }
 
 .about #pageSkills {
